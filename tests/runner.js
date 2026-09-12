@@ -16,12 +16,16 @@ global.localStorage = (() => {
   };
 })();
 
-// Test 1: Fleet verification
+// Test 1: Fleet verification & Images
 assert.strictEqual(fleetData.length, 5, 'Should have 5 luxury vehicles');
 const rolls = fleetData.find(v => v.id === 'rolls-phantom');
 assert.ok(rolls, 'Rolls-Royce Phantom should exist');
 assert.strictEqual(rolls.hourlyRate, 350);
-console.log('✓ Fleet data schema verified');
+fleetData.forEach(v => {
+  assert.ok(v.image, `Vehicle ${v.id} must have an image`);
+  assert.ok(v.image.endsWith('.jpg'), `Vehicle ${v.id} image must end in .jpg`);
+});
+console.log('✓ Fleet data schema and dedicated vehicle images verified');
 
 // Test 2: Standard Hourly Fare
 // 3 hours in Rolls-Royce: base = 350 * 3 = 1050

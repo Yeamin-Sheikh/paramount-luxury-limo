@@ -26,7 +26,12 @@ paramount-luxury-limo/
 ├── assets/
 │   ├── images/
 │   │   ├── hero.jpg
-│   │   └── interior.jpg
+│   │   ├── interior.jpg
+│   │   ├── fleet-rolls-royce.jpg
+│   │   ├── fleet-maybach.jpg
+│   │   ├── fleet-escalade.jpg
+│   │   ├── fleet-sprinter.jpg
+│   │   └── fleet-lincoln-stretch.jpg
 │   └── svgs/
 │       ├── logo.svg
 │       └── icons.svg
@@ -40,6 +45,7 @@ paramount-luxury-limo/
 │   └── reservation.js
 ├── tests/
 │   └── runner.js
+├── config.json
 ├── index.html
 ├── package.json
 └── README.md

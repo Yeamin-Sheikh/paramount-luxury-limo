@@ -12,7 +12,7 @@ export const fleetData = [
     passengers: 3,
     luggage: 3,
     badge: 'Pinnacle Luxury',
-    image: 'interior.jpg',
+    image: 'fleet-rolls-royce.jpg',
     features: [
       'Starlight fiber optic headliner with shooting stars',
       'Hand-stitched leather with lambswool floor mats',
@@ -30,7 +30,7 @@ export const fleetData = [
     passengers: 3,
     luggage: 3,
     badge: 'Executive Choice',
-    image: 'hero.jpg',
+    image: 'fleet-maybach.jpg',
     features: [
       'Executive rear seating with calf rests and hot stone massage',
       'Burmester high-end 4D surround sound system',
@@ -48,7 +48,7 @@ export const fleetData = [
     passengers: 6,
     luggage: 6,
     badge: 'Spacious Comfort',
-    image: 'hero.jpg',
+    image: 'fleet-escalade.jpg',
     features: [
       'Extended wheelbase with exceptional rear legroom',
       'AKG Studio Reference 36-speaker acoustic audio',
@@ -66,7 +66,7 @@ export const fleetData = [
     passengers: 14,
     luggage: 10,
     badge: 'Group Executive',
-    image: 'interior.jpg',
+    image: 'fleet-sprinter.jpg',
     features: [
       'Custom captain leather chairs with 360-degree swivel',
       '43-inch 4K Smart TV with Apple TV and HDMI inputs',
@@ -76,22 +76,22 @@ export const fleetData = [
     description: 'A private jet on wheels. Perfect for wine tours in Santa Ynez, corporate offsites, and concert tours.'
   },
   {
-    id: 'hummer-stretch',
-    name: 'Hummer H2 Mega Stretch Limousine',
+    id: 'lincoln-stretch',
+    name: 'Lincoln Continental VIP Stretch Limousine',
     category: 'Super Stretch Limousine',
     hourlyRate: 240,
     minHours: 3,
-    passengers: 18,
+    passengers: 12,
     luggage: 8,
     badge: 'Celebration Master',
-    image: 'interior.jpg',
+    image: 'fleet-lincoln-stretch.jpg',
     features: [
       'Multi-color mood fiber optic ceiling and laser strobes',
       'Dual illuminated cocktail bars with crystal glassware',
       'Custom 2,000-watt sound system with Bluetooth control',
       'J-lounge two-tone custom leather perimeter seating'
     ],
-    description: 'Built for unforgettable celebrations. The premier choice for weddings, birthdays, bachelor parties, and prom nights.'
+    description: 'Built for unforgettable celebrations. The premier choice for weddings, red carpets, Hollywood premieres, and galas.'
   }
 ];
 

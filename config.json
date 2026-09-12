@@ -1,0 +1,28 @@
+{
+  "serviceName": "Paramount Limousine Service",
+  "streetAddress": "7115 W Manchester Ave",
+  "city": "Los Angeles",
+  "state": "CA",
+  "postalCode": "90045",
+  "phone": "(310) 670-6000",
+  "licensing": {
+    "californiaTCP": "TCP-14289-A",
+    "laxAirportPermit": "LAX-CHAUFFEUR-PERMIT #2026-081",
+    "commercialLiabilityCoverageUSD": 5000000
+  },
+  "pricing": {
+    "chauffeurGratuityPercent": 20,
+    "laxAirportGateFeeUSD": 35.00,
+    "amenitiesBarRestockUSD": 75.00,
+    "redCarpetServiceUSD": 150.00
+  },
+  "serviceCoverage": [
+    "Beverly Hills",
+    "Bel Air",
+    "Santa Monica",
+    "Malibu",
+    "Hollywood",
+    "Downtown Los Angeles",
+    "LAX Private Aviation FBOs"
+  ]
+}
