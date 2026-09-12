@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rates &amp; Fare Calculator | Paramount Limousine Los Angeles</title>
+  <meta name="description" content="Transparent rates and instant quote calculator for Paramount Limousine luxury fleet. Flat airport rates and hourly charters with all-inclusive pricing.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-limo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.8C2.1 11 2 11.5 2 12v4c0 .6.4 1 1 1h2"></path>
+    <circle cx="7" cy="17" r="2"></circle>
+    <circle cx="17" cy="17" r="2"></circle>
+    <path d="M5 11h11M9 7.5v3.5M13 7.5v3.5"></path>
+  </symbol>
+  <symbol id="icon-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 22h8M12 15v7M16 4l1 7a4 4 0 0 1-4 4 4 4 0 0 1-4-4l1-7h6z"></path>
+  </symbol>
+  <symbol id="icon-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+  </symbol>
+  <symbol id="icon-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3.5c-.5-.5-2.5 0-4 1.5L13.5 8.5 5.3 6.7c-.8-.2-1.6.1-2.1.7l-.7.7 5.5 3.5-3 3-2.5-.5-1 .5 2 2 2 2 .5-1-.5-2.5 3-3 3.5 5.5.7-.7c.6-.5.9-1.3.7-2.1z"></path>
+  </symbol>
+  <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+    <circle cx="9" cy="7" r="4"></circle>
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+  </symbol>
+  <symbol id="icon-luggage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="6" y="7" width="12" height="14" rx="2"></rect>
+    <path d="M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3M6 12h12"></path>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24" fill="#D4AF37" stroke="#D4AF37">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+  </symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <polyline points="12 6 12 12 16 14"></polyline>
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+    <line x1="16" y1="2" x2="16" y2="6"></line>
+    <line x1="8" y1="2" x2="8" y2="6"></line>
+    <line x1="3" y1="10" x2="21" y2="10"></line>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"></polyline>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+  </symbol>
+</svg>
+  <!-- Concierge Ribbon -->
+  <div class="concierge-ribbon">
+    <div class="ribbon-flex">
+      <div>
+        <span>24/7 VIP Concierge Dispatch: </span>
+        <a href="tel:3106706656" class="gold-link">(310) 670-6656</a>
+        <span> &bull; LAX Private Tarmac &amp; Van Nuys Meet-and-Greet</span>
+      </div>
+      <div>
+        <span>California CPUC TCP Permitted: TCP-34891-B</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/svgs/logo.svg" alt="Paramount Limousine Los Angeles" height="46">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="fleet.html" class="nav-link">Our Fleet</a></li>
+          <li><a href="services.html" class="nav-link">Chauffeured Services</a></li>
+          <li><a href="pricing.html" class="nav-link active">Rates &amp; Calculator</a></li>
+          <li><a href="about.html" class="nav-link">About Paramount</a></li>
+          <li><a href="contact.html" class="nav-link">24/7 Concierge</a></li>
+        </ul>
+        <div>
+          <a href="pricing.html" class="btn-gold">Calculate Fare</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background: linear-gradient(rgba(10,12,16,0.85), rgba(10,12,16,0.85)), url('assets/images/interior.jpg') center/cover; padding: 4.5rem 0; text-align: center;">
+    <div class="container">
+      <span class="gold-badge" style="margin-bottom: 1rem; display: inline-block;">All-Inclusive Transparent Pricing</span>
+      <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">Rates &amp; Instant Fare Calculator</h1>
+      <p style="max-width: 680px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">
+        No hidden surcharges. All quotes include chauffeur gratuity, California licensing fees, standard airport parking, and complimentary amenities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Fare Calculator + 6 Pictures Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="hero-grid" style="align-items: start; margin-bottom: 3rem;">
+        <!-- Calculator Box -->
+        <div class="calculator-card" style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--card-border);">
+          <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Instant Reservation Quote</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Select your itinerary details below for real-time fare computation.</p>
+
+          <form id="pricing-calculator-form" onsubmit="event.preventDefault(); alert('Quote generated! Your dedicated concierge will contact you immediately to lock in your reservation.');">
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label style="display: block; margin-bottom: 0.4rem; font-weight: 600;">Service Category</label>
+              <select id="calc-service" class="form-control" style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-main); border: 1px solid var(--card-border); color: var(--text-main);">
+                <option value="lax">LAX Airport Tarmac Transfer (Flat Rate)</option>
+                <option value="hourly">As-Directed Hourly Charter</option>
+                <option value="gala">Hollywood Red Carpet Event</option>
+                <option value="wedding">Malibu Wedding Package (6 Hours)</option>
+                <option value="wine">Napa / Santa Ynez Wine Tour (8 Hours)</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label style="display: block; margin-bottom: 0.4rem; font-weight: 600;">Select Vehicle Model</label>
+              <select id="calc-vehicle" class="form-control" style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-main); border: 1px solid var(--card-border); color: var(--text-main);">
+                <option value="rr">Rolls-Royce Phantom VIII ($295/hr)</option>
+                <option value="maybach">Mercedes-Maybach S680 ($210/hr)</option>
+                <option value="escalade" selected>Cadillac Escalade ESV ($150/hr)</option>
+                <option value="sprinter">Mercedes Sprinter Executive Jet ($195/hr)</option>
+                <option value="stretch">Lincoln Presidential Stretch ($175/hr)</option>
+              </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+              <div class="form-group">
+                <label style="display: block; margin-bottom: 0.4rem; font-weight: 600;">Pickup Date</label>
+                <input type="date" class="form-control" required style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-main); border: 1px solid var(--card-border); color: var(--text-main);">
+              </div>
+              <div class="form-group">
+                <label style="display: block; margin-bottom: 0.4rem; font-weight: 600;">Duration / Hours</label>
+                <input type="number" min="2" max="24" value="4" class="form-control" style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-main); border: 1px solid var(--card-border); color: var(--text-main);">
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 1.25rem;">
+              <label style="display: block; margin-bottom: 0.4rem; font-weight: 600;">Pickup Location</label>
+              <input type="text" placeholder="e.g. Beverly Wilshire Hotel or LAX Private FBO" required class="form-control" style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-main); border: 1px solid var(--card-border); color: var(--text-main);">
+            </div>
+
+            <button type="submit" class="btn-gold" style="width: 100%; padding: 0.9rem; font-size: 1.05rem;">Lock In Fare Quote</button>
+          </form>
+        </div>
+
+        <!-- Transparent Rate Card Grid -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--card-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h4 style="margin: 0; color: var(--text-main);">LAX &bull; Flat Airport Rates</h4>
+              <span style="color: var(--gold); font-weight: bold;">From $310</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.5rem 0 0;">Includes flight tracking, meet-and-greet in baggage claim or private FBO tarmac, and 45 minutes complimentary wait time.</p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--card-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h4 style="margin: 0; color: var(--text-main);">Hourly As-Directed Charters</h4>
+              <span style="color: var(--gold); font-weight: bold;">$150 - $295 / hr</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.5rem 0 0;">Vehicle remains at your disposal with unlimited stops within the Greater Los Angeles metropolitan area.</p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--card-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h4 style="margin: 0; color: var(--text-main);">Wedding &amp; Nuptial Packages</h4>
+              <span style="color: var(--gold); font-weight: bold;">From $950</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.5rem 0 0;">6 hours of white stretch limousine service, chilled champagne, red carpet runner, and "Just Married" adornment.</p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--card-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h4 style="margin: 0; color: var(--text-main);">Napa / Santa Barbara Wine Tours</h4>
+              <span style="color: var(--gold); font-weight: bold;">From $1,450</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.5rem 0 0;">8-hour round-trip excursion in executive Mercedes Sprinter with concierge vineyard reservations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Fleet Pictures on Pricing Page -->
+      <div class="section-title-wrap text-center">
+        <span class="gold-badge">Vehicles Ready for Booking</span>
+        <h2 class="section-heading">Verified Rate Standards</h2>
+      </div>
+
+      <div class="fleet-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <div class="fleet-card">
+          <img src="assets/images/fleet-rolls-royce.jpg" alt="Rolls-Royce Phantom" class="fleet-photo">
+          <div class="fleet-card-body">
+            <h4>Rolls-Royce Phantom VIII</h4>
+            <p style="color: var(--gold); font-weight: bold;">$295/hr &bull; 4 hr min</p>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <img src="assets/images/fleet-maybach.jpg" alt="Mercedes-Maybach S680" class="fleet-photo">
+          <div class="fleet-card-body">
+            <h4>Mercedes-Maybach S680</h4>
+            <p style="color: var(--gold); font-weight: bold;">$210/hr &bull; 3 hr min</p>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <img src="assets/images/fleet-escalade.jpg" alt="Cadillac Escalade ESV" class="fleet-photo">
+          <div class="fleet-card-body">
+            <h4>Cadillac Escalade ESV</h4>
+            <p style="color: var(--gold); font-weight: bold;">$150/hr &bull; 2 hr min</p>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <img src="assets/images/fleet-sprinter.jpg" alt="Mercedes Sprinter Jet" class="fleet-photo">
+          <div class="fleet-card-body">
+            <h4>Mercedes Sprinter Jet</h4>
+            <p style="color: var(--gold); font-weight: bold;">$195/hr &bull; 4 hr min</p>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <img src="assets/images/fleet-lincoln-stretch.jpg" alt="Lincoln Stretch Limo" class="fleet-photo">
+          <div class="fleet-card-body">
+            <h4>Lincoln Presidential Stretch</h4>
+            <p style="color: var(--gold); font-weight: bold;">$175/hr &bull; 4 hr min</p>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <img src="assets/images/interior.jpg" alt="First Class Cabin" class="fleet-photo">
+          <div class="fleet-card-body">
+            <h4>First-Class Cabin Inclusions</h4>
+            <p style="color: var(--gold); font-weight: bold;">Complimentary on All Rides</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/svgs/logo.svg" alt="Paramount Limousine Service" height="42" style="margin-bottom: 1.25rem;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            California's gold standard in luxury chauffeured transportation. Serving Beverly Hills, Bel Air, Malibu, Hollywood, and private aviation terminals throughout Southern California.
+          </p>
+          <div style="margin-top: 1rem; color: var(--gold-light); font-size: 0.9rem;">
+            CPUC Carrier License: TCP-34891-B &bull; Fully Insured $5M Commercial Liability
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fleet.html">Luxury Fleet</a></li>
+            <li><a href="services.html">Chauffeur Services</a></li>
+            <li><a href="pricing.html">Fare Calculator &amp; Rates</a></li>
+            <li><a href="about.html">About Company Standards</a></li>
+            <li><a href="contact.html">24/7 VIP Dispatch</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Signature Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">LAX &amp; Van Nuys Private Tarmac Transfers</a></li>
+            <li><a href="services.html">Hollywood Red Carpet Film Premieres</a></li>
+            <li><a href="services.html">Malibu Coastal Wedding Limousines</a></li>
+            <li><a href="services.html">Santa Barbara &amp; Napa Wine Charters</a></li>
+            <li><a href="services.html">Diplomatic &amp; Executive Security Transport</a></li>
+            <li><a href="services.html">As-Directed Hourly Chauffeur</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>VIP Dispatch Office</h4>
+          <ul class="footer-hours">
+            <li><span>Reservations:</span> <a href="tel:3106706656" class="gold-link">(310) 670-6656</a></li>
+            <li><span>Dispatch Status:</span> <span>Active 24 Hours / 365 Days</span></li>
+            <li><span>Headquarters:</span> <span>9601 Wilshire Blvd, Beverly Hills, CA 90210</span></li>
+            <li style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--card-border); color: var(--gold);">
+              <svg class="icon" style="width: 14px; height: 14px; margin-right: 4px;"><use href="#icon-crown"></use></svg>
+              <span>White Glove Service Guaranteed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Paramount Limousine Service Inc. All rights reserved. Registered with California Public Utilities Commission.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/fleet.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/reservation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
