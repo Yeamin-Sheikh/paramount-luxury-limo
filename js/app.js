@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
           
           <div class="fleet-specs-row">
             <div class="fleet-spec">
-              <svg class="icon"><use href="assets/svgs/icons.svg#icon-users"></use></svg>
+              <svg class="icon"><use href="#icon-users"></use></svg>
               <span>Up to ${vehicle.passengers} Guests</span>
             </div>
             <div class="fleet-spec">
-              <svg class="icon"><use href="assets/svgs/icons.svg#icon-luggage"></use></svg>
+              <svg class="icon"><use href="#icon-luggage"></use></svg>
               <span>${vehicle.luggage} Bags</span>
             </div>
           </div>
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <ul class="fleet-features">
             ${vehicle.features.map(f => `
               <li>
-                <svg class="icon"><use href="assets/svgs/icons.svg#icon-check"></use></svg>
+                <svg class="icon"><use href="#icon-check"></use></svg>
                 <span>${f}</span>
               </li>
             `).join('')}
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     reviewsContainer.innerHTML = clientReviews.map(rev => `
       <div style="background: #141417; border: 1px solid #27272A; border-radius: 12px; padding: 2rem;">
         <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 1rem;">
-          ${Array(rev.rating).fill('<svg class="icon" style="width:18px;height:18px;"><use href="assets/svgs/icons.svg#icon-star"></use></svg>').join('')}
+          ${Array(rev.rating).fill('<svg class="icon" style="width:18px;height:18px;"><use href="#icon-star"></use></svg>').join('')}
         </div>
         <p style="font-size: 0.95rem; color: #D4D4D8; font-style: italic; margin-bottom: 1.25rem; line-height: 1.6;">
           "${rev.comment}"
