@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 64" fill="none">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <!-- Crown & Crest Emblem -->
+  <g transform="translate(8, 7)">
+    <rect x="0" y="0" width="50" height="50" rx="10" fill="#18181B" stroke="url(#gold-grad)" stroke-width="1.5" />
+    <!-- Crown -->
+    <path d="M14 34 L12 20 L20 25 L25 15 L30 25 L38 20 L36 34 Z" fill="url(#gold-grad)" />
+    <!-- Diamond Accent -->
+    <circle cx="25" cy="13" r="2" fill="#FCD34D" />
+  </g>
+  <!-- Typography -->
+  <text x="72" y="28" font-family="'Cinzel', 'Times New Roman', serif, system-ui" font-weight="700" font-size="20" fill="#F4F4F5" letter-spacing="2">PARAMOUNT</text>
+  <text x="236" y="28" font-family="'Cinzel', 'Times New Roman', serif, system-ui" font-weight="700" font-size="20" fill="url(#gold-grad)" letter-spacing="2">LIMOUSINE</text>
+  <text x="72" y="47" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9.5" fill="#A1A1AA" letter-spacing="2.2">LOS ANGELES, CA &bull; EXECUTIVE FLEET &bull; EST. 1989</text>
+</svg>

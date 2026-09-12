@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paramount Limousine Service | Luxury Chauffeur & Limos — Los Angeles</title>
+  <meta name="description" content="Premier Los Angeles luxury limousine and executive chauffeured fleet. Rolls-Royce Phantom, Mercedes-Maybach, Cadillac Escalade ESV. Serving Beverly Hills, LAX, and Hollywood events.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Concierge Ribbon -->
+  <div class="concierge-ribbon">
+    <div class="ribbon-flex">
+      <div>
+        <span>24/7 VIP Concierge Dispatch: </span>
+        <a href="tel:3106706656" class="gold-link">(310) 670-6656</a>
+        <span> &bull; LAX Curbside & Meet-and-Greet Available</span>
+      </div>
+      <div>
+        <span>California CPUC TCP Permitted: TCP-34891-B</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#hero" class="brand-logo">
+          <img src="assets/svgs/logo.svg" alt="Paramount Limousine Los Angeles" height="46">
+        </a>
+        <ul class="nav-links">
+          <li><a href="#fleet" class="nav-link">Our Fleet</a></li>
+          <li><a href="#calculator" class="nav-link">Fare Calculator</a></li>
+          <li><a href="#interior" class="nav-link">Interior Experience</a></li>
+          <li><a href="#reviews" class="nav-link">Client Reviews</a></li>
+          <li><a href="#service-area" class="nav-link">Service Areas</a></li>
+        </ul>
+        <div>
+          <a href="#calculator" class="btn-gold">Calculate Fare</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-subtitle">Bespoke California Luxury Chauffeur</div>
+        <h1 class="hero-title">Elevating Los Angeles Travel to an <span class="gold-gradient-text">Art Form.</span></h1>
+        <p class="hero-description">
+          Discreet, punctual, and uncompromising luxury transport. Our handpicked fleet of Rolls-Royce, Mercedes-Maybach, and executive Escalades serves Hollywood galas, private aviation at LAX and Van Nuys, and coastal tours.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#fleet" class="btn-gold">Explore The Fleet</a>
+          <a href="#calculator" class="btn-outline-gold">Get Instant Quote</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>35+</h3>
+            <p>Years in LA</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>On-Time Record</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.98/5</h3>
+            <p>VIP Rating</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Chauffeur Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Showcase -->
+  <section id="fleet" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Executive Collection</span>
+        <h2 class="section-title">The Paramount Fleet</h2>
+        <p class="section-subtitle">
+          Every vehicle is meticulously maintained, detailed before every reservation, and piloted by career chauffeurs in formal attire.
+        </p>
+      </div>
+      <div id="fleet-grid" class="fleet-grid"></div>
+    </div>
+  </section>
+
+  <!-- Fare Quote Calculator -->
+  <section id="calculator" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transparent Rates</span>
+        <h2 class="section-title">Instant Fare Quote & Booking</h2>
+        <p class="section-subtitle">
+          No hidden fuel surcharges or ambiguous fees. View complete California rates with transparent breakdown.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <form id="calc-form">
+          <div class="calc-form-group">
+            <label>Select Fleet Vehicle</label>
+            <select id="calc-vehicle" class="calc-input"></select>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="calc-form-group">
+              <label>Service Type</label>
+              <select id="calc-service-type" class="calc-input">
+                <option value="hourly">Hourly Charter (As-Directed)</option>
+                <option value="lax-airport">LAX Airport Curbside / Transfer</option>
+                <option value="red-carpet">Red Carpet Gala / Hollywood Premiere</option>
+                <option value="wedding">Wedding Ceremony Package</option>
+              </select>
+            </div>
+            <div class="calc-form-group">
+              <label>Duration (Hours)</label>
+              <input type="number" id="calc-hours" class="calc-input" value="3" min="1" max="24">
+            </div>
+          </div>
+
+          <div class="calc-form-group">
+            <label>VIP Amenities & Add-Ons</label>
+            <div class="addon-checkboxes">
+              <label class="addon-label">
+                <input type="checkbox" class="addon-checkbox" value="champagne">
+                <span>Dom P&eacute;rignon & Flutes (+$140)</span>
+              </label>
+              <label class="addon-label">
+                <input type="checkbox" class="addon-checkbox" value="red-carpet">
+                <span>Red Carpet Rollout (+$75)</span>
+              </label>
+              <label class="addon-label">
+                <input type="checkbox" class="addon-checkbox" value="security">
+                <span>Armed Security Chauffeur (+$350)</span>
+              </label>
+              <label class="addon-label">
+                <input type="checkbox" class="addon-checkbox" value="wifi">
+                <span>5G Mobile Boardroom Wi-Fi (+$30)</span>
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="fare-breakdown">
+          <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 1.5rem; color: #FAFAFA;">Fare Breakdown</h3>
+          <div class="breakdown-row">
+            <span>Base Chauffeur Rate</span>
+            <span id="fare-base">$1,050.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Staging & Access Permit Fee</span>
+            <span id="fare-service">$0.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Custom Amenities & Add-ons</span>
+            <span id="fare-addons">$0.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Standard Chauffeur Gratuity (20%)</span>
+            <span id="fare-gratuity">$210.00</span>
+          </div>
+          <div class="breakdown-total">
+            <span style="font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Total Estimated Fare</span>
+            <span class="total-amount" id="fare-total">$1,260.00</span>
+          </div>
+          <button type="button" class="btn-gold" style="width: 100%; margin-top: 1.5rem;" onclick="document.getElementById('modal-vehicle-name').value=document.getElementById('calc-vehicle').options[document.getElementById('calc-vehicle').selectedIndex].text.split(' (')[0]; document.getElementById('modal-overlay').classList.add('open'); document.getElementById('booking-modal').classList.add('open');">
+            Reserve This Trip
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interior Experience Section -->
+  <section id="interior" class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 3.5rem; align-items: center;">
+        <div>
+          <span class="section-tag">First-Class Sanctuary</span>
+          <h2 class="section-title" style="text-align: left;">Step Inside Pure Sophistication</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.7;">
+            Sink into hand-stitched Connolly leather. Admire our signature optical fiber starlight headliners, calibrated to mirror the night sky over Beverly Hills. Chill your champagne in temperature-regulated silver coolers while acoustic privacy glass shields you from bustling city noise.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; color: var(--text-main); font-size: 0.95rem; margin-bottom: 2rem;">
+            <li style="display: flex; align-items: center; gap: 0.75rem;">
+              <svg class="icon" style="color: var(--gold-vibrant);"><use href="assets/svgs/icons.svg#icon-star"></use></svg>
+              Fiber-optic starlight ceiling with programmable constellation lighting
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem;">
+              <svg class="icon" style="color: var(--gold-vibrant);"><use href="assets/svgs/icons.svg#icon-champagne"></use></svg>
+              Integrated chilled crystal beverage bar with premium refreshments
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem;">
+              <svg class="icon" style="color: var(--gold-vibrant);"><use href="assets/svgs/icons.svg#icon-shield"></use></svg>
+              Acoustic sound dampening privacy partition with private intercom
+            </li>
+          </ul>
+          <button class="btn-outline-gold view-tour-btn">View Full High-Res Interior</button>
+        </div>
+
+        <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border-gold); box-shadow: var(--shadow-card); position: relative;">
+          <img src="assets/images/interior.jpg" alt="Paramount Limousine Starlight Interior" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section id="reviews" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Executive Accolades</span>
+        <h2 class="section-title">Endorsed by Discerning Travelers</h2>
+        <p class="section-subtitle">
+          From Academy Award celebrations to Fortune 500 summits across Southern California.
+        </p>
+      </div>
+      <div id="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;"></div>
+    </div>
+  </section>
+
+  <!-- Service Areas & Location -->
+  <section id="service-area" class="section">
+    <div class="container">
+      <div style="background: #141417; border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <div>
+          <span class="section-tag">California Operating Radius</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem;">Southern California Coverage</h2>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+            Headquartered near LAX on Manchester Ave, our vehicles operate continuously across Greater Los Angeles and beyond.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; font-size: 0.95rem; color: var(--text-main);">
+            <div>&bull; Los Angeles Int'l (LAX)</div>
+            <div>&bull; Beverly Hills & Bel Air</div>
+            <div>&bull; Hollywood & Sunset Strip</div>
+            <div>&bull; Malibu & Santa Monica</div>
+            <div>&bull; Van Nuys Private Jet Center</div>
+            <div>&bull; Orange County / Newport Beach</div>
+          </div>
+        </div>
+
+        <div style="background: #1E1E24; border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--border-gold); display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.75rem; color: #FAFAFA;">Paramount Limousine Service</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">
+            7115 W Manchester Ave, Westchester, Los Angeles, CA 90045
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">
+            Phone: (310) 670-6656 | Toll Free: (800) 843-5466
+          </p>
+          <a href="https://maps.google.com/?q=7115+W+Manchester+Ave+Los+Angeles+CA+90045" target="_blank" rel="noopener noreferrer" class="btn-outline-gold" style="text-align: center;">
+            View Headquarters on Google Maps &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/svgs/logo.svg" alt="Paramount Limousine" height="42" style="margin-bottom: 1.25rem;">
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; max-width: 340px;">
+            The gold standard in luxury chauffeured transportation throughout Los Angeles, California. Specializing in airport transfers, red carpet events, and corporate travel.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Fleet Options</h4>
+          <ul class="footer-links">
+            <li><a href="#fleet">Rolls-Royce Phantom VIII</a></li>
+            <li><a href="#fleet">Mercedes-Maybach S580</a></li>
+            <li><a href="#fleet">Cadillac Escalade ESV</a></li>
+            <li><a href="#fleet">Mercedes Executive Sprinter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Executive Services</h4>
+          <ul class="footer-links">
+            <li><a href="#calculator">LAX Airport Curbside</a></li>
+            <li><a href="#calculator">Hourly Directed Chauffeur</a></li>
+            <li><a href="#calculator">Hollywood Red Carpet Galas</a></li>
+            <li><a href="#calculator">Private Security Transport</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Licensing & Regulatory</h4>
+          <ul class="footer-links">
+            <li><span style="font-size: 0.85rem;">CA CPUC TCP #34891-B</span></li>
+            <li><span style="font-size: 0.85rem;">LAWA LAX Commercial Permit</span></li>
+            <li><span style="font-size: 0.85rem;">$5M Commercial Liability Insurance</span></li>
+            <li><a href="#reviews">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Paramount Limousine Service. All rights reserved. 7115 W Manchester Ave, Los Angeles, CA 90045.</div>
+        <div>Crafted with precision.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <!-- Reservation Modal -->
+  <div id="booking-modal" class="modal-box" style="display: none; position: fixed; z-index: 301;">
+    <button class="modal-close-btn">&times;</button>
+    <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.5rem; color: #FAFAFA;">VIP Chauffeur Reservation</h3>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Please provide your pickup schedule and route details.</p>
+    <form id="booking-form">
+      <div class="calc-form-group">
+        <label>Selected Vehicle</label>
+        <input type="text" id="modal-vehicle-name" name="vehicle" class="calc-input" readonly>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="calc-form-group">
+          <label>Date of Service</label>
+          <input type="date" name="date" class="calc-input" value="2026-09-18" required>
+        </div>
+        <div class="calc-form-group">
+          <label>Pickup Time</label>
+          <input type="time" name="time" class="calc-input" value="18:30" required>
+        </div>
+      </div>
+      <div class="calc-form-group">
+        <label>Pickup Address / Airport Flight Number</label>
+        <input type="text" name="pickupLocation" class="calc-input" placeholder="e.g. LAX Terminal B or 9641 Sunset Blvd, Beverly Hills" required>
+      </div>
+      <div class="calc-form-group">
+        <label>Destination Address</label>
+        <input type="text" name="dropoffLocation" class="calc-input" placeholder="e.g. Dolby Theatre, Hollywood" required>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="calc-form-group">
+          <label>Passenger Full Name</label>
+          <input type="text" name="name" class="calc-input" placeholder="Lord / Lady / Mr. / Ms." required>
+        </div>
+        <div class="calc-form-group">
+          <label>Contact Phone</label>
+          <input type="tel" name="phone" class="calc-input" placeholder="(310) 555-0144" required>
+        </div>
+      </div>
+      <div class="calc-form-group">
+        <label>Email for Dispatch Confirmation</label>
+        <input type="email" name="email" class="calc-input" placeholder="vip@client.com" required>
+      </div>
+      <button type="submit" class="btn-gold" style="width: 100%; margin-top: 1rem;">Confirm Reservation Request</button>
+    </form>
+  </div>
+
+  <!-- 360 Interior Modal -->
+  <div id="interior-modal" class="modal-box" style="display: none; position: fixed; z-index: 301; max-width: 820px;">
+    <button class="modal-close-btn">&times;</button>
+    <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 0.5rem; color: #FAFAFA;">Executive Interior Experience</h3>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Ultra-quiet acoustic cabin, genuine starlight optic headliner, chilled champagne flutes.</p>
+    <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-gold); margin-bottom: 1.5rem;">
+      <img src="assets/images/interior.jpg" alt="Limousine Interior" style="width: 100%; height: auto; display: block;">
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="font-size: 0.85rem; color: var(--text-muted);">Configured with 4K HDMI Monitors &bull; Wireless Headsets &bull; 110V AC Outlets</div>
+      <button class="btn-gold" onclick="document.getElementById('interior-modal').classList.remove('open'); document.getElementById('modal-vehicle-name').value='Rolls-Royce Phantom VIII'; document.getElementById('booking-modal').classList.add('open');">
+        Reserve Vehicle
+      </button>
+    </div>
+  </div>
+
+  <div style="display: none;">
+    <object id="svg-sprite-holder" data="assets/svgs/icons.svg" type="image/svg+xml"></object>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

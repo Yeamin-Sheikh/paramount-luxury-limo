@@ -1,0 +1,20 @@
+{
+  "name": "paramount-luxury-limo",
+  "version": "1.0.0",
+  "description": "Executive limousine fleet reservation portal for Paramount Limousine Service in Los Angeles, California",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/runner.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "limousine",
+    "los-angeles",
+    "california",
+    "chauffeur",
+    "luxury-fleet",
+    "reservation-system"
+  ],
+  "author": "Yeamin Sheikh <yeaminsheikh12@gmail.com>",
+  "license": "MIT"
+}
